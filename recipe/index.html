@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-section">
+        <h1 id="app-title">Culinary Explorer</h1>
+        <div class="favorites-icon" id="favorites-toggle">
+          <i class="fas fa-star"></i>
+          <span>Saved Recipes</span>
+        </div>
+      </div>
+      <div class="search-section">
+        <input type="text" id="recipe-search" placeholder="Find your favorite dishes...">
+        <i class="fas fa-search"></i>
+      </div>
+    </nav>
+    <div id="autocomplete-box" class="hidden"></div>
+  </header>
+  <main>
+    <div id="saved-recipes-modal" class="hidden">
+      <button id="close-saved-recipes">Close</button>
+      <div id="saved-recipes-list"></div>
+    </div>
+    <div id="recipe-cards-container"></div>
+    <div id="recipe-info-modal" class="hidden">
+      <button id="close-recipe-info">Close</button>
+      <div id="recipe-details-content"></div>
+    </div>
+    <h1 class="hidden"></h1>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

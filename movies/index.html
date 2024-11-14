@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Movie App</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Movie App</h1>
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for movies...">
+        <i class="fas fa-search"></i>
+      </div>
+      <div id="watchlist-icon">
+        <i class="fas fa-bookmark"></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="movie-list"></div>
+  </main>
+  <div id="details-overlay" class="hidden">
+    <div id="details-container">
+      <button id="close-overlay">&times;</button>
+      <div id="details-content"></div>
+    </div>
+  </div>
+  <div id="watchlist" class="hidden">
+     <div id="watchlist-content">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

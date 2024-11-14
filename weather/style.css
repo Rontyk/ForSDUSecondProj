@@ -1,0 +1,79 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #74b9ff, #dff9fb);
+  color: #2d3436;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #0984e3;
+  border-radius: 5px;
+}
+
+#dropdown-suggestions {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#dropdown-suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dropdown-suggestions li:hover {
+  background: #dfe6e9;
+}
+.hidden{
+  display: none;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #00cec9;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #0984e3;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.forecast-card {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
